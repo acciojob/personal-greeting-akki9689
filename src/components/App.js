@@ -5,6 +5,9 @@ import { useState } from "react";
 
 const App = () => {
   const [name,setName]=useState("")
+  const relate=(e)=>{
+setName(e.target.value)
+  }
   return (
     <div>
         <div>
