@@ -13,7 +13,7 @@ setName(e.target.value)
         <div>
         <p>Enter Your name:</p>
         <input value={name}  onChange={relate}/>
-        {name && <h2>Hello ! {name}</h2>}
+        {name && <h2>Hello {name}!</h2>}
     </div>
     </div>
   )
