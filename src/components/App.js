@@ -1,11 +1,17 @@
 
 import React from "react";
 import './../styles/App.css';
+import { useState } from "react";
 
 const App = () => {
+  const [name,setName]=useState("")
   return (
     <div>
-        {/* Do not remove the main div */}
+        <div>
+        <p>Enter Your name:</p>
+        <input value={name}  onChange={relate}/>
+        {name && <h2>Hello ! {name}</h2>}
+    </div>
     </div>
   )
 }
